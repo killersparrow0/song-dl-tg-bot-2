@@ -35,23 +35,23 @@ bot = Client(
 @bot.on_message(filters.command("start") & ~filters.edited)
 async def start(_, message):
    if message.chat.type == 'private':
-       await message.reply("**Hey There, I'm a 𝐄𝐌𝐌𝐀 𝐌𝐔𝐒𝐈𝐂 𝐁𝐎𝐓.Send The Name of the Song You Want.**\n`Eg:- /song Bad Habits` \n\n **A bot by @epusthakalaya_bots.**",   
+       await message.reply("**Hey There, I'm a ➳Ｍｉｓａ❦.Send The Name of the Song You Want.**\n`Eg:- /s Lovely` \n\n **A bot by @movies_songs_tj.**",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "⛑ Dev ⛑", url="https://t.me/kasu_bro"),
+                                            "⛑ Dev ⛑", url="https://t.me/joinchat/vcOhk8tX214zNGQ1"),
                                         InlineKeyboardButton(
-                                            "📣 Channel 📣", url="https://t.me/epusthakalaya_bots")
+                                            "📣 GROUP 📣", url="https://t.me/movies_songs_tj")
                                     ]]
                             ))
    else:
-      await message.reply("**𝐄𝐌𝐌𝐀 𝐌𝐔𝐒𝐈𝐂 𝐁𝐎𝐓  is online ✨**")
+      await message.reply("** ➳Ｍｉｓａ❦ is online ✅✨**")
 
 
-@bot.on_message(filters.command("song") & ~filters.edited)
+@bot.on_message(filters.command("s") & ~filters.edited)
 async def song(_, message):
     if len(message.command) < 2:
-       return await message.reply("**Usage:**\n - `Eg:- /song Bad Habits`")
+       return await message.reply("**Usage:**\n - `Eg:- /s Lovely`")
     query = message.text.split(None, 1)[1]
     shed = await message.reply("🔎 Finding the song...")
     ydl_opts = {
@@ -86,7 +86,7 @@ async def song(_, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = "🎵 Uploaded by @epusthakalaua_bots"
+        rep = "🎵 Uploaded by @meenuty_bot"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
