@@ -1,16 +1,16 @@
 {
-    "name": "𝐄𝐌𝐌𝐀 𝐌𝐔𝐒𝐈𝐂 𝐁𝐎𝐓",
+    "name": "➳Ｍｉｓａ❦",
     "description": "A bot that can download songs.",
-    "logo": "https://telegra.ph/file/e561880f97698b813a688.jpg",
+    "logo": "https://telegra.ph/file/04828a131605f87a0cc7b.gif",
     "keywords": [
         "JESongBot",
         "Song Downloader",
         "Telegram Bot",
         "JE Bots"
     ],
-    "website": "https://t.me/kasu_bro",
-    "repository": "https://github.com/kasunthamadushanka/EMMAMUSIC-BOT",
-    "success_url": "https://epusthakalaya_bots",
+    "website": "https://telegram.me/movies_songs_tj",
+    "repository": "https://github.com/killersparrow0/song-dl-tg-bot-2",
+    "success_url": "https://telegram.me/movies_songs_tj",
     "env": {
         "BOT_TOKEN": {
             "description": "Your Telegram Bot Token from @BotFather",
