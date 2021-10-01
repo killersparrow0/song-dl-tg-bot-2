@@ -1,20 +1,19 @@
-# ✨ 𝐄𝐌𝐌𝐀 𝐌𝐔𝐒𝐈𝐂 𝐁𝐎𝐓 ✨
-A telegram bot that can download high quality songs from YouTube music
-<p align="center">
-  <img src="https://telegra.ph/file/e561880f97698b813a688.jpg">
-</p>
+# Telegram Song Download Bot ❤
 
-Reach me on Telegram [✨ 𝐄𝐌𝐌𝐀 𝐌𝐔𝐒𝐈𝐂 𝐁𝐎𝐓 ✨](https://t.me/EmmaMusicPlayerBot)
+## You can download any song using this bot. Can be found in telegram as [➳Ｍｉｓａ❦](https://t.me/meenuty_bot)
 
-## Features
+### Commands:
+- In Groups - `/s <song name>`
+- In Private - Just send song name
 
-- Download HQ songs from YouTube Music
+### Deploy to Heroku 🏃‍♂
 
-## Heroku Deploy
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/killersparrow0/song-dl-tg-bot)
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/kasunthamadushanka/EMMAMUSIC-BOT"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" alt="Heroku Deploy" width="210" height="34.45"/></a></p>
+### Credits:
 
-## Credits
+- [Infinity BOTs](https://t.me/Infinity_BOTs)
 
-- [Pyrogram](https://github.com/pyrogram)
-- [Original Repo](https://github.com/ImJanindu/JESongBot.git)
+- [Pyrogram Library](https://github.com/pyrogram/pyrogram)
+###
+- [support group](https://t.me/movies_songs_tj)
