@@ -95,7 +95,7 @@ async def song(_, message):
         s = await message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur, performer=channel)
         await shed.delete()
     except Exception as e:
-        await shed.edit("❌ Error")
+        await shed.edit("❌ Error try again or Please Report this error with @movies_songs_tj")
         print(e)
 
     try:
