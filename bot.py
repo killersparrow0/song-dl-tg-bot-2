@@ -65,8 +65,8 @@ async def song(_, message):
         link = f"https://youtube.com{results[0]['url_suffix']}"
         #print(results)
         title = results[0]["title"][:40]       
-        thumbnail = results[0]["thumbnails"][0]
-        thumb_name = f'thumb{thumb.jpg}.jpg'
+        thumbnail = results[0]["thumbnail"][0]
+        thumb_name = f'thumb{title}.jpg'
         thumb = requests.get(thumbnail, allow_redirects=True)
         open(thumb_name, 'wb').write(thumb.content)
 
@@ -86,7 +86,7 @@ async def song(_, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = " 🎵 Uploaded by @Misasongdl_bot , 🎸 Join Group @movies_songs_tj"
+        rep = "🎵 Uploaded by @Misasongdl_bot"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
