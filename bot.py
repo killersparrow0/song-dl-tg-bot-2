@@ -39,7 +39,7 @@ async def start(_, message):
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "⛑ Dev ⛑", url="https://t.me/joinchat/vcOhk8tX214zNGQ1"),
+                                            "🧑🏽‍💻 Dev 🧑🏽‍💻", url="https://t.me/joinchat/vcOhk8tX214zNGQ1"),
                                         InlineKeyboardButton(
                                             "📣 GROUP 📣", url="https://t.me/movies_songs_tj")
                                     ]]
