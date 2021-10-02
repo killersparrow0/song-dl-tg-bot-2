@@ -35,20 +35,20 @@ bot = Client(
 @bot.on_message(filters.command("start") & ~filters.edited)
 async def start(_, message):
    if message.chat.type == 'private':
-       await message.reply("**Hey There, I'm a ➳Ｍｉｓａ❦.Send The Name of the Song You Want.**\n`Eg:- /s Lovely` \n\n **A bot by @movies_songs_tj.**",   
+       await message.reply("**Hey There, I'm a ➳Ｍｉｓａ❦ .Send The Name of the Song You Want.**\n`Eg:- /s Lovely` \n\n **A bot by @movies_songs_tj.**",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
                                             "🧑🏽‍💻 Dev 🧑🏽‍💻", url="https://t.me/joinchat/vcOhk8tX214zNGQ1"),
                                         InlineKeyboardButton(
-                                            "📣 GROUP 📣", url="https://t.me/movies_songs_tj")
+                                            "📣 Group 📣", url="https://t.me/movies_songs_tj")
                                     ]]
                             ))
    else:
-      await message.reply("** ➳Ｍｉｓａ❦ is online ✅✨**")
+      await message.reply("**➳Ｍｉｓａ❦  is online ✅✨**")
 
 
-@bot.on_message(filters.command("s") & ~filters.edited)
+@bot.on_message(filters.command("song") & ~filters.edited)
 async def song(_, message):
     if len(message.command) < 2:
        return await message.reply("**Usage:**\n - `Eg:- /s Lovely`")
@@ -65,7 +65,7 @@ async def song(_, message):
         link = f"https://youtube.com{results[0]['url_suffix']}"
         #print(results)
         title = results[0]["title"][:40]       
-        thumbnail = results[0]["thumbnail"][0]
+        thumbnail = results[0]["thumbnails"][0]
         thumb_name = f'thumb{title}.jpg'
         thumb = requests.get(thumbnail, allow_redirects=True)
         open(thumb_name, 'wb').write(thumb.content)
@@ -86,7 +86,7 @@ async def song(_, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = "🎵 Uploaded by @Misasongdl_bot"
+        rep = "🎵 uploaded by @Misasongdl_bot , 🎸 join @movies_songs_tj"
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -106,3 +106,7 @@ async def song(_, message):
 
 bot.start()
 idle()
+
+###
+
+
